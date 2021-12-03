@@ -17,7 +17,7 @@
                 value="Guardar"
                 type="submit">Guardar</button>
         </form>
-        <a href="#"><button class="btn btn-primary" type="button">Agregar Vacantes</button></a>
+        <a href="http://localhost/proyecto/public/vacantes"><button class="btn btn-primary" type="button">Agregar Vacantes</button></a>
         <a href="#"><button class="btn btn-primary" type="button">Agregar Departamentos</button></a>
     </div>
     <div class="table-container">
