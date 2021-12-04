@@ -89,7 +89,7 @@
                 <option value="Zacatecas"> Zacatecas </option>
             </select><br><br>
             <select name="estatus" id="estatus">
-            <option selected='selected' disabled>Activo</option>
+            <option selected='selected' disabled>Status</option>
                 <option value="Activo">Activo</option>
                 <option value="Inactivo">Inactivo</option>
             </select><br><br>
