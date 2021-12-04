@@ -8,7 +8,7 @@
         <div class="main-container">
             <div>
                 <form action="http://localhost/proyecto/public/buscar" method= "GET">
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder = "Nombre">
                     <select name="estatus" id="estatus">
                         <option value=" "></option>
                         <option value="Activo">Activo</option>
@@ -17,8 +17,14 @@
                     <select name="carrera" id="carrera">
                         <option value=" "></option>
                         <option value="Ingenieria Bioquimica">Ingenieria Bioquimica</option>
-                        <option value="Ingenieria en Sistemas Computacionales">Ingenieria en Sistemas Computacionales</option>
+                        <option value="Ingenieria en Industrias Alimentarias">Ingenieria en Industrias Alimentarias</option>
+                        <option value="Ingenieria en Materiales">Ingenieria en Materiales</option>
+                        <option value="Ingenieria en Sistemas Computacionales">Ingenieria en Sistemas Comptacionales</option>
+                        <option value="Ingenieria Indstrial">Ingenieria Industrial</option>
+                        <option value="Ingenieria Mecatronica">Ingenieria Mecatronica</option>
+                        <option value="Licenciatura en Administracion">Licenciatura en Administracion</option>
                         <option value="Ingenieria Informatica">Ingenieria Informatica</option>
+                        <option value="Ingenieria en Innovacion Agricola">Ingenieria en Innovacion Agricola</option>
                     </select>
                     <input type="submit" class="btn btn-primary" value="Buscar">
                 </form>

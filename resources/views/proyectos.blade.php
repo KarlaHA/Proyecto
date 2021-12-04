@@ -6,7 +6,7 @@
 
     <div class="main-container">
         <form action="">
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" placeholder = "Nombre">
             <select name="carrera" id="carrera">
                 <option value="Ingenieria en Sistemas Computacionales">Ingenieria en Sistemas Computacionales</option>
                 <option value="Ingenieria Bioquimica">Ingenieria Bioquimica</option>

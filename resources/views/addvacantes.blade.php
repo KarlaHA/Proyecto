@@ -20,7 +20,7 @@
                 <option value="Sistemas">Sistemas</option>
                 <option value="Atencion al cliente">Atencion al cliente</option>
             </select><br></br>
-            <input type="text" name="vacantes" id="vacantes"><br></br>
+            <input type="text" name="vacantes" id="vacantes" placeholder = "Vacantes"><br></br>
             <button class="btn btn-primary" 
                 name="btnAccion"
                 value="Guardar"

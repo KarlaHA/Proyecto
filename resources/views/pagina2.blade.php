@@ -15,8 +15,8 @@
                 type="submit">Guardar</button>
             
 
-            <input type="text" name="nombre" id="nombre"><br><br>
-            <input type="text" name="representante" id="representante"><br><br>
+            <input type="text" name="nombre" id="nombre" placeholder = "Nombre"><br><br>
+            <input type="text" name="representante" id="representante" placeholder = "Representante"><br><br>
             <select name="estado" id="estado">
                 <option value="Campeche"> Campeche</option>
                 <option value=""> ccc </option>
