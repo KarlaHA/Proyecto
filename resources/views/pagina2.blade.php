@@ -18,6 +18,7 @@
             <input type="text" name="nombre" id="nombre" placeholder = "Nombre"><br><br>
             <input type="text" name="representante" id="representante" placeholder = "Representante"><br><br>
             <select name="estado" id="estado">
+            <option selected='selected' disabled>Ciudad</option>
                 <option value="Aguacalientes"> Aguascalientes</option>
                 <option value="Baja California"> Baja California </option>
                 <option value="Baja California Sur"> Baja California Sur </option>
@@ -52,6 +53,7 @@
                 <option value="Zacatecas"> Zacatecas </option>
             </select><br><br>
             <select name="ciudad" id="ciudad">
+            <option selected='selected' disabled>Estado</option>
             <option value="Aguacalientes"> Aguascalientes</option>
                 <option value="Mexicali"> Mexicali </option>
                 <option value="La Paz"> La Paz </option>
@@ -87,10 +89,12 @@
                 <option value="Zacatecas"> Zacatecas </option>
             </select><br><br>
             <select name="estatus" id="estatus">
+            <option selected='selected' disabled>Activo</option>
                 <option value="Activo">Activo</option>
                 <option value="Inactivo">Inactivo</option>
             </select><br><br>
             <select name="carrera" id="carrera">
+            <option selected='selected' disabled>Carrera</option>
             <option value="Ingenieria Bioquimica">Ingenieria Bioquimica</option>
                         <option value="Ingenieria en Industrias Alimentarias">Ingenieria en Industrias Alimentarias</option>
                         <option value="Ingenieria en Materiales">Ingenieria en Materiales</option>

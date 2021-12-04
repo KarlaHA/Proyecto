@@ -7,10 +7,12 @@
     <div class="main-container">
         <form action="">
             <select name="periodo" id="periodo">
+            <option selected='selected' disabled>Periodo</option>
                 <option value="2021-2022N">2021-2022N</option>
                 <option value="2022-2023P">2022-2023P</option>
             </select><br></br>
             <select name="carrera" id="carrera">
+            <option selected='selected' disabled>Carrera</option>
             <option value="Ingenieria Bioquimica">Ingenieria Bioquimica</option>
                         <option value="Ingenieria en Industrias Alimentarias">Ingenieria en Industrias Alimentarias</option>
                         <option value="Ingenieria en Materiales">Ingenieria en Materiales</option>
@@ -22,6 +24,7 @@
                         <option value="Ingenieria en Innovacion Agricola">Ingenieria en Innovacion Agricola</option>
             </select><br></br>
             <select name="Departamento" id="Departamento">
+            <option selected='selected' disabled>Departamentos</option>
                 <option value="Ventas">Ventas</option>
                 <option value="Sistemas">Sistemas</option>
                 <option value="Atencion al cliente">Atencion al cliente</option>
