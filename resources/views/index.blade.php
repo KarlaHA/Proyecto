@@ -3,13 +3,13 @@
 @section('titulo', 'Inicio')
 
 @section('contenido')
-    
+
     <section>
         <div class="main-container">
             <div>
                 <form action="http://localhost/proyecto/public/buscar" method= "GET">
                     <input type="text" name="nombre" id="nombre" placeholder = "Nombre">
-                    <select name="estatus" id="estatus">
+                     <select name="estatus" id="estatus">
                         <option value=" "></option>
                         <option value="Activo">Activo</option>
                         <option value="Inactivo">Inactivo</option>

@@ -10,7 +10,7 @@
             <input type="text" name="docente" id="docente" placeholder = "Docente">
             <select name="periodo" id="periodo">
                 <option value="2021-2022N">2021-2022N</option>
-                <option value="2021-2022P">2021-2022P</option>
+                <option value="2022-2023P">2022-2023P</option>
             </select>
             <button class="btn btn-primary" 
                 name="btnAccion"
