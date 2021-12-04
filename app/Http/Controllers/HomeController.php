@@ -21,17 +21,12 @@ class HomeController extends Controller
         $txtnombre=$request->get('nombre');
             $txtestatus=$request->get('estatus');
             $txtcarrera=$request->get('carrera');
-            if ($txtestatus =='vacio'&& $txtcarrera =='vacio') 
 
-               {$registros = DB::table('registroempresas')
+                $registros = DB::table('registroempresas')
                             ->where('nombre','LIKE', '%'.$txtnombre.'%')
-                            ->orderBy('id', 'desc')->get();} 
-                            else 
-
-                            {$registros = DB::table('registroempresas')
                             ->where('estatus', $txtestatus)
                             ->where('carrera','LIKE', '%'.$txtcarrera.'%')
-                            ->orderBy('id', 'desc')->get();}
+                            ->orderBy('id', 'desc')->get();
 
         return view('index', compact('registros', 'txtnombre', 'txtestatus', 'txtcarrera'));
     }
