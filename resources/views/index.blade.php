@@ -10,12 +10,12 @@
                 <form action="http://localhost/proyecto/public/buscar" method= "GET">
                     <input type="text" name="nombre" id="nombre" placeholder = "Nombre">
                      <select name="estatus" id="estatus">
-                        <option selected='selected' disabled>Status</option>
+                        <option selected='selected' value= 'vacio'>Status</option>
                         <option value="Activo">Activo</option>
                         <option value="Inactivo">Inactivo</option>
                     </select>
                     <select name="carrera" id="carrera">
-                        <option selected='selected' disabled>Carrera</option>
+                        <option selected='selected' value= 'vacio'>Carrera</option>
                         <option value="Ingenieria Bioquimica">Ingenieria Bioquimica</option>
                         <option value="Ingenieria en Industrias Alimentarias">Ingenieria en Industrias Alimentarias</option>
                         <option value="Ingenieria en Materiales">Ingenieria en Materiales</option>
