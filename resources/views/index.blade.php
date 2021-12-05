@@ -29,8 +29,8 @@
                     <input type="submit" class="btn btn-primary" value="Buscar">
                 </form>
             </div>
-            <a href="http://localhost/proyecto/public/registro"><button class="btn btn-primary" type="button">Nuevo</button></a>
-            
+            <a href="/registro"><button class="btn btn-primary" type="button">Nuevo</button></a>
+            <input type = 'button' class="btn btn-primary" id='btnnew' value='nuevo'>
         </div>
     </section>
     <section>
@@ -60,5 +60,7 @@
             </table>
         </div>
     </section>
-
+    <script type = 'text/javascript'> 
+    document.getElementById('btnnew').addEventListener('click', function(){window.location.href='/registro'})
+    </scipt>
 @endsection
