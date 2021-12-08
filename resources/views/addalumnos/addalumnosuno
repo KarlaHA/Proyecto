@@ -1,0 +1,7 @@
+@extends ('templates.plantilla')
+
+@section('titulo', 'Nuevo Registro')
+
+@section('contenido')
+
+@endsection
