@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProyectoController;
 use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\VacanteController;
+use App\Http\Controllers\BuscaralumController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,4 @@ Route::get('proyectosnuevo', [ProyectoController::class, 'nuevo']);
 
 Route::post('registro/nuevo', [RegistroController::class, 'guardar']);
 
+Route::get('busquedaalumnos', [BuscaralumController::class, 'mostraralumnos']); //primero en el buscador, segundo nombre de la funcion
