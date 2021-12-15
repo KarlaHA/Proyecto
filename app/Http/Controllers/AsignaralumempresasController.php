@@ -8,6 +8,6 @@ class AsignaralumempresasController extends Controller
 {
     public function asignaraempresas() //tiene que ser un nombre diferente
     {
-        return view('addalumnostres');
+        return view('addalumnos/addalumnostres');
     }
 }

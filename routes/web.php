@@ -6,8 +6,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProyectoController;
 use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\VacanteController;
+use App\Http\Controllers\BuscaralumController;
 use App\Http\Controllers\AsignaralumempresasController;
-
+use App\Http\Controllers\AsignaralumproyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,4 +39,6 @@ Route::post('registro/nuevo', [RegistroController::class, 'guardar']);
 
 Route::get('busquedaalumnos', [BuscaralumController::class, 'mostraralumnos']); //primero en el buscador, segundo nombre de la funcion
 
-Route::get('asignaraempresas', [AsignaralumempresasController::class, 'asignaraempresas']);
+Route::get('asignacionaempresas', [AsignaralumempresasController::class, 'asignaraempresas']);
+
+Route::get('asignacionaproyectos', [AsignaralumproyController::class, 'asignaraproyectos']);

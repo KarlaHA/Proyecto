@@ -8,6 +8,6 @@ class BuscaralumController extends Controller
 {
     public function mostraralumnos() //tiene que ser un nombre diferente
     {
-        return view('addalumnosuno');
+        return view('addalumnos/addalumnosuno');
     }
 }
