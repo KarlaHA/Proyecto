@@ -7,7 +7,7 @@
     <section>
         <div class="main-container">
             <div>
-                <form action="http://localhost/proyecto/public/buscar" method= "GET">
+                <form action="/buscar" method= "GET">
                     <input type="text" name="nombre" id="nombre" placeholder = "Nombre">
                      <select name="estatus" id="estatus">
                         <option selected='selected' value= 'vacio'>Status</option>
@@ -30,7 +30,6 @@
                 </form>
             </div>
             <a href="/registro"><button class="btn btn-primary" type="button">Nuevo</button></a>
-            <input type = 'button' class="btn btn-primary" id='btnnew' value='nuevo'>
         </div>
     </section>
     <section>

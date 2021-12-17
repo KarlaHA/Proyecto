@@ -6,7 +6,7 @@
 
 
     <div class="btn-container">
-        <form method= "POST" action="http://localhost/proyecto/public/registro/nuevo">
+        <form method= "POST" action="registro/nuevo">
             @csrf
             
             <button class="btn btn-primary" 
@@ -18,76 +18,12 @@
             <input type="text" name="nombre" id="nombre" placeholder = "Nombre"><br><br>
             <input type="text" name="representante" id="representante" placeholder = "Representante"><br><br>
             <select name="estado" id="estado">
-            <option selected='selected' disabled>Ciudad</option>
-                <option value="Aguacalientes"> Aguascalientes</option>
-                <option value="Baja California"> Baja California </option>
-                <option value="Baja California Sur"> Baja California Sur </option>
-                <option value="Campeche"> Campeche </option>
-                <option value="Coahuila"> Coahuila </option>
-                <option value="Colima"> Colima </option>
-                <option value="Chiapas"> Chiapas </option>
-                <option value="Chihuahua"> Chihuahua </option>
-                <option value="CDMX"> CDMX </option>
-                <option value="Durango"> Durango </option>
-                <option value="Guanajuato"> Guanajuato </option>
-                <option value="Guerrero"> Guerrero </option>
-                <option value="Hidalgo"> Hidalgo </option>
-                <option value="Jalisco"> Jalisco </option>
-                <option value="Mexico"> Mexico </option>
-                <option value="Michoacan"> Michoacan</option>
-                <option value="Morelos"> Morelos </option>
-                <option value="Nayarit"> Nayarit </option>
-                <option value="Nuevo Leon"> Nuevo Leon </option>
-                <option value="Oaxaca"> Oaxaca </option>
-                <option value="Puebla"> Puebla </option>
-                <option value="Queretaro"> Queretaro </option>
-                <option value="Quintana Roo"> Quintana Roo </option>
-                <option value="San Luis Potosi"> San Luis Potosi </option>
-                <option value="Sinaloa"> Sinaloa </option>
-                <option value="Sonora"> Sonora </option>
-                <option value="Tabasco"> Tabasco </option>
-                <option value="Tamaulipas"> Tamaulipas </option>
-                <option value="Tlaxcala"> Tlaxcala </option>
-                <option value="Veracruz"> Veracruz </option>
-                <option value="Yucatan"> Yucatan </option>
-                <option value="Zacatecas"> Zacatecas </option>
+                <option selected disabled value="">Estado</option>
+                @foreach ($estados as $item)
+                    <option value="{{$item->id}}">{{$item->nombre}}</option>
+                @endforeach
             </select><br><br>
-            <select name="ciudad" id="ciudad">
-            <option selected='selected' disabled>Estado</option>
-            <option value="Aguacalientes"> Aguascalientes</option>
-                <option value="Mexicali"> Mexicali </option>
-                <option value="La Paz"> La Paz </option>
-                <option value="Campeche"> Campeche </option>
-                <option value="Calkini"> Calkini </option>
-                <option value="Saltillo"> Saltillo </option>
-                <option value="Colima"> Colima </option>
-                <option value="Tuxtla"> Tuxtla </option>
-                <option value="Chihuahua"> Chihuahua </option>
-                <option value="CDMX"> CDMX </option>
-                <option value="Durango"> Durango </option>
-                <option value="Guanajuato"> Guanajuato </option>
-                <option value="Chilpancingo"> Chilpancingo </option>
-                <option value="Pachuca"> Pachuca </option>
-                <option value="Guadalajara"> Guadalajara </option>
-                <option value="Toluca"> Toluca </option>
-                <option value="Morelia"> Morelia</option>
-                <option value="Cuernavaca"> Cuernavaca </option>
-                <option value="Tepic"> Tepic </option>
-                <option value="Monterrey"> Monterrey </option>
-                <option value="Oaxaca"> Oaxaca </option>
-                <option value="Puebla"> Puebla </option>
-                <option value="Queretaro"> Queretaro </option>
-                <option value="Cancun"> Cancun </option>
-                <option value="San Luis Potosi"> San Luis Potosi </option>
-                <option value="Culiacan"> Culiacan </option>
-                <option value="Hermosillo"> Hermosillo </option>
-                <option value="Villahermosa"> Villahermosa </option>
-                <option value="Ciudad Victoria"> Ciudad Victoria </option>
-                <option value="Tlaxcala"> Tlaxcala </option>
-                <option value="Xalapa"> Xalapa </option>
-                <option value="Merida"> Merida </option>
-                <option value="Zacatecas"> Zacatecas </option>
-            </select><br><br>
+            <select name="ciudad" id="ciudad"></select><br><br>
             <select name="estatus" id="estatus">
             <option selected='selected' disabled>Status</option>
                 <option value="Activo">Activo</option>
@@ -111,5 +47,25 @@
         <a href="http://localhost/proyecto/public/vacantes"><button class="btn btn-primary" type="button">Vacantes</button></a><br><br>
         
     </div>
-
+    <script>
+        const csrfToken = document.head.querySelector("[name~=csrf-token][content]").content;
+        document.getElementById('estado').addEventListener('change', (e)=>{
+            fetch('registro/municipios',{
+                method:'POST',
+                body: JSON.stringify({texto : e.target.value}),
+                headers:{
+                    'Content-Type': 'application/json',
+                    "X-CSRF-Token": csrfToken
+                }
+            }).then(response =>{
+                return response.json()
+            }).then(data=>{
+                var opciones ='<option selected disabled value="">Municipio</option>';
+                for (let i in data.lista) {
+                    opciones+= '<option value="'+data.lista[i].nombre+'">'+data.lista[i].nombre+'</option>';
+                }
+                document.getElementById("ciudad").innerHTML = opciones;
+            }).catch(error=>console.error(error));
+        })
+    </script>
 @endsection

@@ -27,6 +27,8 @@ Route::get('buscar', [HomeController::class, 'buscar']);
 
 Route::get('registro', [RegistroController::class, 'nuevoregistro']);
 
+Route::post('registro/municipios', [RegistroController::class, 'municipios']);
+
 Route::get('vacantes', [VacanteController::class, 'create']);
 
 Route::get('proyectos', [ProyectoController::class, 'mostrar']);
