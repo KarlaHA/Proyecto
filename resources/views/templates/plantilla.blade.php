@@ -34,13 +34,13 @@
                 <a href="/">
                     <div class="title"><span>Empresas</span></div>
                 </a>
-                <a href="/proyectos">
+                <a href="/prueba">
                     <div class="title"><span>Proyectos</span></div>
                 </a>
                 <a href="/departamento">
                     <div class="title"><span>Departamentos</span></div>
                 </a>
-                <a href="#">
+                <a href="busquedaalumnos">
                     <div class="title"><span>Asignar alumnos</span></div>
                 </a>
                 <a href="#">
