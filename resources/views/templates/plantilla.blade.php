@@ -31,11 +31,14 @@
 
         <div id="menu-items">
             <div class="item">
-                <a href="http://localhost/proyecto/public">
+                <a href="/">
                     <div class="title"><span>Empresas</span></div>
                 </a>
-                <a href="http://localhost/proyecto/public/proyectos">
+                <a href="/proyectos">
                     <div class="title"><span>Proyectos</span></div>
+                </a>
+                <a href="/departamento">
+                    <div class="title"><span>Departamentos</span></div>
                 </a>
                 <a href="#">
                     <div class="title"><span>Asignar alumnos</span></div>

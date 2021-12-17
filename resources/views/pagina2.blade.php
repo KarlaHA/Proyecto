@@ -44,7 +44,7 @@
             
         </form>
         <button class="btn btn-primary" type="button">Agregar departamento</button>
-        <a href="http://localhost/proyecto/public/vacantes"><button class="btn btn-primary" type="button">Vacantes</button></a><br><br>
+        <a href="/vacantes"><button class="btn btn-primary" type="button">Vacantes</button></a><br><br>
         
     </div>
     <script>

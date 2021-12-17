@@ -29,7 +29,7 @@ class RegistroController extends Controller
 
         $nregistro->save();
 
-        return redirect('/');
+        return redirect('/departamento');
     }
     public function municipios(Request $request)
     {

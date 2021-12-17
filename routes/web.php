@@ -9,6 +9,7 @@ use App\Http\Controllers\VacanteController;
 use App\Http\Controllers\BuscaralumController;
 use App\Http\Controllers\AsignaralumempresasController;
 use App\Http\Controllers\AsignaralumproyController;
+use App\Http\Controllers\DepartamentoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,8 @@ Route::post('registro/municipios', [RegistroController::class, 'municipios']);
 
 Route::get('vacantes', [VacanteController::class, 'create']);
 
+Route::post('vacantes/nuevo', [VacanteController::class, 'nuevo']);
+
 Route::get('proyectos', [ProyectoController::class, 'mostrar']);
 
 Route::get('proyectos/buscar', [ProyectoController::class, 'buscar']);
@@ -44,3 +47,7 @@ Route::get('busquedaalumnos', [BuscaralumController::class, 'mostraralumnos']); 
 Route::get('asignacionaempresas', [AsignaralumempresasController::class, 'asignaraempresas']);
 
 Route::get('asignacionaproyectos', [AsignaralumproyController::class, 'asignaraproyectos']);
+
+Route::get('departamento', [DepartamentoController::class, 'mostrarDep']);
+
+Route::post('departamento/nuevo', [DepartamentoController::class, 'nuevoDep']);

@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Registroempresa;
-use App\Models\Alumnosporcarreras;
+//use App\Models\Alumnosporcarreras;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        Registroempresa::factory(30)->create();
-        Alumnosporcarreras::factory(20)->create();
+        Registroempresa::factory(10)->create();
+        //Alumnosporcarreras::factory(20)->create();
     }
         
     
