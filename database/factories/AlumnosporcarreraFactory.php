@@ -3,9 +3,9 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use App\Models\Alumnosporcarreras;
+use App\Models\Alumnosporcarrera;
 
-class AlumnosFactory extends Factory
+class AlumnosporcarreraFactory extends Factory
 {
     /**
      * Define the model's default state.
