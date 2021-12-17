@@ -39,8 +39,18 @@
                         <th width="15%" class="text-center">Semestre</th>
                         <th width="15%" class="text-center">Creditos</th>
                         <th width="15%" class="text-center">Opciones</th>
+
                        
-                    </tr>   
+                    </tr> 
+                    @foreach ($listaalumnos as $item)
+                    <th width="15%" class="text-center">{{$item->matricula}}</th>
+                    <th width="15%" class="text-center">{{$item->nombre}}</th>
+                    <th width="15%" class="text-center">{{$item->carrera}}</th>
+                    <th width="15%" class="text-center">{{$item->semestre}}</th>
+                    <th width="15%" class="text-center">{{$item->creditos}}</th>
+                    <th width="15%" class="text-center">Opciones</th>
+
+                    @endforeach  
                 </tbody>
             </table>
         </div>
