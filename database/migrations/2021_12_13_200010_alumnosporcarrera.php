@@ -13,7 +13,7 @@ class Alumnosporcarrera extends Migration
      */
     public function up()
     {
-        Schema::create('alumnosporcarrera', function (Blueprint $table) {
+        Schema::create('alumnosporcarreras', function (Blueprint $table) {
             $table->id();
             $table->string('matricula');
             $table->string('nombre');
