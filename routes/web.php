@@ -12,7 +12,7 @@ use App\Http\Controllers\AsignaralumproyController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\NuevopController;
 use App\Http\Controllers\IndexproyectoController;
-
+use App\Http\Controllers\VacanteproyectoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,3 +59,7 @@ Route::get('prueba', [IndexproyectoController::class, 'proyect']);
 Route::get('empresa', [nuevopController::class, 'nuevop']);
 
 Route::post('enviar', [nuevopController::class, 'guardarproyecto']);
+
+Route::get('vacanteproyecto', [VacanteproyectoController::class, 'mostrarvacante']);
+
+Route::post('enviavacantep', [VacanteproyectoController::class, 'agregavacantes']);

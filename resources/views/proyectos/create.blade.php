@@ -23,7 +23,7 @@
         <div class="btn-container">
        
        
-        <a href="vacanteproyecto"><button class="btn btn-primary" type="button">Vacantes</button></a><br><br>
+       
         
     </div>
 

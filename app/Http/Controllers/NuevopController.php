@@ -25,6 +25,6 @@ class NuevopController extends Controller
 
         $nproyecto->save();
 
-        return redirect('prueba');
+        return redirect('/vacanteproyecto');
     }
 }
