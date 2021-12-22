@@ -13,6 +13,10 @@ use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\NuevopController;
 use App\Http\Controllers\IndexproyectoController;
 use App\Http\Controllers\VacanteproyectoController;
+use App\Http\Controllers\DocumentoController;
+use App\Http\Controllers\DocumentodosController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,3 +67,7 @@ Route::post('enviar', [nuevopController::class, 'guardarproyecto']);
 Route::get('vacanteproyecto', [VacanteproyectoController::class, 'mostrarvacante']);
 
 Route::post('enviavacantep', [VacanteproyectoController::class, 'agregavacantes']);
+
+Route::get('documentos', [DocumentoController::class, 'mostrardocs']);
+
+Route::get('creardocumento', [DocumentodosController::class, 'creardocs']);
