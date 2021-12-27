@@ -10,6 +10,12 @@ use App\Http\Controllers\BuscaralumController;
 use App\Http\Controllers\AsignaralumempresasController;
 use App\Http\Controllers\AsignaralumproyController;
 use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\NuevopController;
+use App\Http\Controllers\IndexproyectoController;
+use App\Http\Controllers\VacanteproyectoController;
+use App\Http\Controllers\DocumentoController;
+use App\Http\Controllers\DocumentodosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -51,3 +57,17 @@ Route::get('asignacionaproyectos', [AsignaralumproyController::class, 'asignarap
 Route::get('departamento', [DepartamentoController::class, 'mostrarDep']);
 
 Route::post('departamento/nuevo', [DepartamentoController::class, 'nuevoDep']);
+
+Route::get('prueba', [IndexproyectoController::class, 'proyect']);
+
+Route::get('empresa', [nuevopController::class, 'nuevop']);
+
+Route::post('enviar', [nuevopController::class, 'guardarproyecto']);
+
+Route::get('vacanteproyecto', [VacanteproyectoController::class, 'mostrarvacante']);
+
+Route::post('enviavacantep', [VacanteproyectoController::class, 'agregavacantes']);
+
+Route::get('documentos', [DocumentoController::class, 'mostrardocs']);
+
+Route::get('creardocumento', [DocumentodosController::class, 'creardocs']);

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Alumnosporcarrera extends Migration
+class Registroproyectonuevo extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class Alumnosporcarrera extends Migration
      */
     public function up()
     {
-        Schema::create('alumnosporcarreras', function (Blueprint $table) {
+        //
+        Schema::create('registroproyectos', function (Blueprint $table) {
             $table->id();
-            $table->string('matricula');
             $table->string('nombre');
-            $table->string('carrera');
-            $table->string('semestre');
-            $table->string('creditos');
-            $table->string('opciones');
+            $table->string('docente');
+            $table->string('periodo');
 
 
             $table->timestamps();
@@ -34,6 +32,7 @@ class Alumnosporcarrera extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('alumnosporcarrera');
+        //
+        Schema::dropIfExists('registroproyectos');
     }
 }
