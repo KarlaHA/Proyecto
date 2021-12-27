@@ -24,7 +24,7 @@ use App\Http\Controllers\DepartamentoController;
 
 Route::get('/', HomeController::class);
 
-Route::get('buscar', [HomeController::class, 'buscar']);
+Route::post('buscar', [HomeController::class, 'buscar']);
 
 Route::get('registro', [RegistroController::class, 'nuevoregistro']);
 
