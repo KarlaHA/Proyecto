@@ -15,7 +15,10 @@ use App\Http\Controllers\IndexproyectoController;
 use App\Http\Controllers\VacanteproyectoController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\DocumentodosController;
-
+use App\Http\Controllers\AsesorunoController;
+use App\Http\Controllers\AsesordosController;
+use App\Http\Controllers\SolicitudunoController;
+use App\Http\Controllers\SolicituddosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +74,11 @@ Route::post('enviavacantep', [VacanteproyectoController::class, 'agregavacantes'
 Route::get('documentos', [DocumentoController::class, 'mostrardocs']);
 
 Route::get('creardocumento', [DocumentodosController::class, 'creardocs']);
+
+Route::get('asesoruno', [AsesorunoController::class, 'asesorprincipal']);
+
+Route::get('asesordos', [AsesordosController::class, 'asesorsegundo']);
+
+Route::get('solicitud', [SolicitudunoController::class, 'solicitudasesor']);
+
+Route::get('relacion', [SolicituddosController::class, 'asesoralumno']);
