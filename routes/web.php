@@ -19,6 +19,8 @@ use App\Http\Controllers\AsesorunoController;
 use App\Http\Controllers\AsesordosController;
 use App\Http\Controllers\SolicitudunoController;
 use App\Http\Controllers\SolicituddosController;
+use App\Http\Controllers\AsigcalifController;
+use App\Http\Controllers\AsigcalifdosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -82,3 +84,7 @@ Route::get('asesordos', [AsesordosController::class, 'asesorsegundo']);
 Route::get('solicitud', [SolicitudunoController::class, 'solicitudasesor']);
 
 Route::get('relacion', [SolicituddosController::class, 'asesoralumno']);
+
+Route::get('calificaciones', [AsigcalifController::class, 'buscarcalif']);
+
+Route::get('asignarcalificaciones', [AsigcalifdosController::class, 'asignarcalif']);
