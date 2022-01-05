@@ -16,10 +16,10 @@ class AsesorunoController extends Controller
     {
 
         $nasesor = new Registrodocente();
-        $nasesor->nombre = $request->input('docente');
-        $nasesor->docente = $request->input('carrera');
+        $nasesor->docente = $request->input('docente');
+        $nasesor->carrera = $request->input('carrera');
         $nasesor->periodo = $request->input('periodo');
-        $nasesor->periodo = $request->input('vacantes');
+        $nasesor->cantidad = $request->input('cantidad');
 
     
 

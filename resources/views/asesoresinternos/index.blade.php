@@ -12,7 +12,7 @@
                 name="btnAccion"
                 value="Guardar"
                 type="submit">Guardar</button>
-                <a href=""><button class="btn btn-primary" type="button">Consultar asesores registrados</button></a>
+                <a href="asesordos"><button class="btn btn-primary" type="button">Consultar asesores registrados</button></a>
                 
             <input type="text" name="docente" id="docente" placeholder = "Docente"><br><br>
             <select name="carrera" id="carrera">
@@ -32,7 +32,7 @@
                 <option value="2019">2019</option>
                 <option value="2021">2021</option>
             </select><br><br>
-            <input type="text" name="vacantes" id="vacantes" placeholder = "vacantes"><br><br>
+            <input type="text" name="cantidad" id="cantidad" placeholder = "vacantes"><br><br>
            
            
         </form>

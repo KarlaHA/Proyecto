@@ -9,7 +9,7 @@
             <div>
                
                   
-                <a href="/creardocumento"><button class="btn btn-primary" type="button">Salir</button></a>
+                <a href=""><button class="btn btn-primary" type="button">Salir</button></a>
            
             </div>
         </div>
