@@ -46,15 +46,16 @@
                 <a href="#">
                     <div class="title"><span>Documentos</span></div>
                 </a>
-                <a href="#">
-                    <div class="title"><span>Asesores</span></div>
+                <a href="asesoruno">
+                    <div class="title"><span>Asesores Internos</span></div>
+                </a>
+                <a href="solicitud">
+                    <div class="title"><span>Solicitud asesor interno</span></div>
                 </a>
                 <a href="#">
                     <div class="title"><span>Calificaciones</span></div>
                 </a>
-                <a href="#">
-                    <div class="title"><span>Asesores internos</span></div>
-                </a>
+                
             </div>
         </div>
     </div>
