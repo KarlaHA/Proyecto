@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Registrodocente;
 use Illuminate\Http\Request;
 
 class AsesordosController extends Controller
@@ -9,7 +9,9 @@ class AsesordosController extends Controller
     //
     public function asesorsegundo()
     {
-        return view ('asesoresinternos.asesoresregis');
+        
+        $list = Registrodocente:: all();
+        return view('asesoresinternos.asesoresregis', compact('list'));
          
     }
 }
