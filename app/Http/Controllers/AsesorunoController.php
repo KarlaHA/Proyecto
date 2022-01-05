@@ -12,4 +12,19 @@ class AsesorunoController extends Controller
         return view ('asesoresinternos.index');
          
     }
+    public function guardarasesor(Request $request)
+    {
+
+        $nasesor = new Asesordocente();
+        $nasesor->nombre = $request->input('docente');
+        $nasesor->docente = $request->input('carrera');
+        $nasesor->periodo = $request->input('periodo');
+        $nasesor->periodo = $request->input('vacantes');
+
+    
+
+        $nasesor->save();
+
+        return redirect('/asesoruno');
+    }
 }

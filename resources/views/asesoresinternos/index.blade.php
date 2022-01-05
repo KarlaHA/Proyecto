@@ -6,7 +6,7 @@
 
 
     <div class="btn-container">
-        <form method= "POST" action="enviar">
+        <form method= "POST" action="enviarasesor">
             @csrf
             <button class="btn btn-primary" 
                 name="btnAccion"
