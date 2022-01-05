@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Registrodocente;
 use Illuminate\Http\Request;
 
 class AsesorunoController extends Controller
@@ -15,7 +15,7 @@ class AsesorunoController extends Controller
     public function guardarasesor(Request $request)
     {
 
-        $nasesor = new Asesordocente();
+        $nasesor = new Registrodocente();
         $nasesor->nombre = $request->input('docente');
         $nasesor->docente = $request->input('carrera');
         $nasesor->periodo = $request->input('periodo');
