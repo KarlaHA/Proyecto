@@ -40,11 +40,11 @@ class HomeController extends Controller
         
         if(isset($request->texto))
         {
-            $registros= DB::table('registroempresas')->orWhere("nombre",'like',$request->texto."%")
-                                                 ->orWhere("carrera",'like',$request->texto."%")
-                                                 ->orWhere("representante",'like',$request->texto."%")
-                                                 ->orWhere("ciudad",'like',$request->texto."%")
-                                                 ->orWhere("estado",'like',$request->texto."%")
+            $registros= DB::table('registroempresas')->orWhere("nombre",'like',"%".$request->texto."%")
+                                                 ->orWhere("carrera",'like',"%".$request->texto."%")
+                                                 ->orWhere("representante",'like',"%".$request->texto."%")
+                                                 ->orWhere("ciudad",'like',"%".$request->texto."%")
+                                                 ->orWhere("estado",'like',"%".$request->texto."%")
                                                  ->orWhere("estatus",'like',$request->texto."%")->get();
             return response()->json(
                 [

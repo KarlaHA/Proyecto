@@ -21,6 +21,7 @@ use App\Http\Controllers\SolicitudunoController;
 use App\Http\Controllers\SolicituddosController;
 use App\Http\Controllers\AsigcalifController;
 use App\Http\Controllers\AsigcalifdosController;
+use App\Http\Controllers\AsignarAlumnoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,9 +56,13 @@ Route::post('registro/nuevo', [RegistroController::class, 'guardar']);
 
 Route::get('busquedaalumnos', [BuscaralumController::class, 'mostraralumnos']); //primero en el buscador, segundo nombre de la funcion
 
-Route::get('asignacionaempresas', [AsignaralumempresasController::class, 'asignaraempresas']);
+Route::post('asignacionaempresas', [AsignaralumempresasController::class, 'asignaraempresas']);
 
-Route::get('asignacionaproyectos', [AsignaralumproyController::class, 'asignaraproyectos']);
+Route::post('asignacionaempresas/nuevo', [AsignaralumempresasController::class, 'asignar']);
+
+Route::post('asignacionaproyectos', [AsignaralumproyController::class, 'asignaraproyectos']);
+
+Route::post('asignacionaproyectos/nuevo', [AsignaralumproyController::class, 'asignar']);
 
 Route::get('departamento', [DepartamentoController::class, 'mostrarDep']);
 
@@ -90,3 +95,4 @@ Route::get('relacion', [SolicituddosController::class, 'asesoralumno']);
 Route::get('calificaciones', [AsigcalifController::class, 'buscarcalif']);
 
 Route::get('asignarcalificaciones', [AsigcalifdosController::class, 'asignarcalif']);
+

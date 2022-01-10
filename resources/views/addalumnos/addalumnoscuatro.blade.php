@@ -1,35 +1,51 @@
 @extends('templates.plantilla')
 
 
-@section('titulo', 'Inicio')
+@section('titulo', 'Asignar Proyecto')
 
 @section('contenido')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
-    <style>
-        body{
-            font-family: sans-serif
-        }
 
-        .contenedor{
-            height: 20vh;
-            margin: 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="contenedor">
-    <h1>PROYECTOS DISPONIBLES</h1>
-</body>
-</html>
+        <span>Nombre del alumno: {{$request->nombre}}</span><br>
+        <span>Matricula del alumno: {{$request->matricula}}</span><br>
+        <span>Carrera del alumno: {{$request->carrera}}</span><br>
+        <span>Semestre del alumno: {{$request->semestre}}</span><br>
+        <span>Creditos del alumno: {{$request->creditos}}</span><br>
 
+        <div class="table-container">
+            <table class="table table-light table-bordered">
+                <tbody>
+                    <tr>
+                        <th width="25%" class="text-center">Nombre</th>
+                        <th width="25%" class="text-center">Docente</th>
+                        <th width="25%" class="text-center">Periodo</th>
+                        <th width="25%" class="text-center">Asignar</td>
+                    </tr>
+                    @foreach ($registros as $item)
+                    <tr>
+                        <td width="25%" class="text-center">{{$item->nombre}}</td>
+                        <td width="25%" class="text-center">{{$item->docente}}</td>
+                        <td width="25%" class="text-center">{{$item->periodo}}</td>
+                        <td width="25%" class="text-center">
+                            <form method= "POST" action="asignacionaproyectos/nuevo">
+                                @csrf
+                                
+                                    <button class="btn btn-primary" 
+                                            name="btnAccion"
+                                            value="Guardar"
+                                            type="submit">Asignar</button>
+                                
+                    
+                                    <input type="hidden" name="alumnoid" id="alumnoid" value="{{$request->id}}">
+                                    <input type="hidden" name="proyectoid" id="proyectoid" value="{{$item->id}}">
+                                    <input type="hidden" name="estatus" id="estatus" value="Asignado">
+                                
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                                 
+                </tbody>
+            </table>
+        </div>
 
 @endsection

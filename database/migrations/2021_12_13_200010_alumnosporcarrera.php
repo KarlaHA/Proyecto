@@ -21,7 +21,7 @@ class Alumnosporcarrera extends Migration
             $table->string('semestre');
             $table->string('creditos');
             $table->string('opciones');
-
+            
 
             $table->timestamps();
         });
