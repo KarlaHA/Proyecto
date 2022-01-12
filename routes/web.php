@@ -22,6 +22,7 @@ use App\Http\Controllers\SolicituddosController;
 use App\Http\Controllers\AsigcalifController;
 use App\Http\Controllers\AsigcalifdosController;
 use App\Http\Controllers\AsignarAlumnoController;
+use App\Http\Controllers\MostraralumController;
 
 /*
 |--------------------------------------------------------------------------
@@ -96,3 +97,4 @@ Route::get('calificaciones', [AsigcalifController::class, 'buscarcalif']);
 
 Route::get('asignarcalificaciones', [AsigcalifdosController::class, 'asignarcalif']);
 
+Route::get('mostraralumnos', [MostraralumController::class, 'presentaralumnos']);

@@ -5,8 +5,8 @@
 @section('contenido')
 
 <section>
-    
         <div class="main-container">
+            
             <div>
                 <form action="/busquedaalumnos" method= "GET">
                   
@@ -25,10 +25,14 @@
                     </select>
                     <input type="submit" class="btn btn-primary" value="Buscar">
                 </form>
+                
             </div>
+            
         </div>
-      
+        
     </section>
+    <section>
+        
     <section>
         <div class="table-container">
             <table class="table table-light table-bordered">
@@ -40,7 +44,7 @@
                         <th width="15%" class="text-center">Carrera</th>
                         <th width="15%" class="text-center">Semestre</th>
                         <th width="15%" class="text-center">Creditos</th>
-                        <th width="25%" class="text-center">Asignar</th>
+                      
 
                        
                     </tr>
@@ -55,42 +59,7 @@
                                 <td width="15%" class="text-center">{{$item->carrera}}</td>
                                 <td width="15%" class="text-center">{{$item->semestre}}</td>
                                 <td width="15%" class="text-center">{{$item->creditos}}</td>
-                                <td width="25%" class="text-center">
-                                    <form method= "POST" action="asignacionaproyectos">
-                                        @csrf
-                                        
-                                            <button class="btn btn-primary" 
-                                                    name="btnAccion"
-                                                    value="Guardar"
-                                                    type="submit">Proyecto</button>
-                                        
-                                        <input type="hidden" id="id" name="id" value="{{$item->id}}">
-                                        <input type="hidden" id="matricula" name="matricula" value="{{$item->matricula}}">
-                                        <input type="hidden" id="nombre" name="nombre" value="{{$item->nombre}}">
-                                        <input type="hidden" id="carrera" name="carrera" value="{{$item->carrera}}">
-                                        <input type="hidden" id="semestre" name="semestre" value="{{$item->semestre}}">
-                                        <input type="hidden" id="creditos" name="creditos" value="{{$item->creditos}}">
-                                        
-                                    </form>
-                                            <span>|</span>
-                                    <form method= "POST" action="asignacionaempresas">
-                                        @csrf
-                                        
-                                            <button class="btn btn-primary" 
-                                                    name="btnAccion"
-                                                    value="Guardar"
-                                                    type="submit">Empresa</button>
-                                        
-                            
-                                        <input type="hidden" id="id" name="id" value="{{$item->id}}">
-                                        <input type="hidden" id="matricula" name="matricula" value="{{$item->matricula}}">
-                                        <input type="hidden" id="nombre" name="nombre" value="{{$item->nombre}}">
-                                        <input type="hidden" id="carrera" name="carrera" value="{{$item->carrera}}">
-                                        <input type="hidden" id="semestre" name="semestre" value="{{$item->semestre}}">
-                                        <input type="hidden" id="creditos" name="creditos" value="{{$item->creditos}}">
-                                        
-                                    </form>
-                                </td>
+                                
 
                                 
                                 
@@ -99,9 +68,13 @@
                     @endforeach  
                 </tbody>
             </table>
+            
             <div class="btn-container">
-                <a href="/mostraralumnos"><button class="btn btn-primary" type="button">Asignados</button></a>
+                <a href="/busquedaalumnos"><button class="btn btn-primary" type="button">Regresar</button></a>
             </div>
+
         </div>
+        
     </section>
+    
 @endsection
