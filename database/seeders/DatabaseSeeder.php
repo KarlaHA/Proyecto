@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\Registroempresa;
 use App\Models\Alumnosporcarrera;
+use App\Models\Estado;
+use App\Models\Municipio;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
