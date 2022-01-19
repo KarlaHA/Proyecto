@@ -12,7 +12,7 @@
                 name="btnAccion"
                 value="Guardar"
                 type="submit">Guardar</button>
-                <a href="asesordos"><button class="btn btn-primary" type="button">Consultar asesores registrados</button></a>
+                <a href="asesoruno"><button class="btn btn-primary" type="button">Consultar asesores registrados</button></a>
                 
             <input type="text" name="docente" id="docente" placeholder = "Docente"><br><br>
             <select name="carrera" id="carrera">
@@ -26,7 +26,7 @@
                         <option value="Licenciatura en Administracion">Licenciatura en Administracion</option>
                         <option value="Ingenieria Informatica">Ingenieria Informatica</option>
                         <option value="Ingenieria en Innovacion Agricola">Ingenieria en Innovacion Agricola</option>
-            </select><br></br>
+            </select><br>
             <select name="periodo" id="periodo">
             <option selected='selected' disabled>Periodo</option>
                 <option value="2019">2019</option>

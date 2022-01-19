@@ -85,7 +85,11 @@ Route::get('creardocumento', [DocumentodosController::class, 'creardocs']);
 
 Route::get('asesoruno', [AsesorunoController::class, 'asesorprincipal']);
 
-Route::post('enviarasesor', [AsesorunoController::class, 'guardarasesor']);
+Route::post('asignardocente', [AsesorunoController::class, 'asignar']);
+
+Route::post('asignardocente/guardar', [AsesorunoController::class, 'guardar']);
+
+Route::post('enviarasesor', [AsesordosController::class, 'guardarasesor']);
 
 Route::get('asesordos', [AsesordosController::class, 'asesorsegundo']);
 
