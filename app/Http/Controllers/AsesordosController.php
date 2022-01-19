@@ -24,11 +24,11 @@ class AsesordosController extends Controller
         $nasesor->periodo = $request->input('periodo');
         $nasesor->cantidad = $request->input('cantidad');
         $nasesor->save();
-        $nasesor=Registrodocente::where('docente', $request->input('docente'))->get();
+        /*$nasesor=Registrodocente::where('docente', $request->input('docente'))->get();
         $nasignacion = new Asigdocente();
         $nasignacion->estatus = "No asignado";
         $nasignacion->docente_id = $nasesor[0]->id;
-        $nasignacion->save();
+        $nasignacion->save();*/
 
 
         return redirect('/asesoruno');
