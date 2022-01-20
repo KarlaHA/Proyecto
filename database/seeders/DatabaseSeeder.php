@@ -21,6 +21,79 @@ class DatabaseSeeder extends Seeder
         Registroempresa::factory(10)->create();
         //Alumnosporcarreras::factory(20)->create();
 
+        $alumnosporcarrera = new Alumnosporcarrera();
+        $alumnosporcarrera->matricula = "5860"
+        $alumnosporcarrera->nombre = "Luis Can Rosado"
+        $alumnosporcarrera->carrera = "Ingeniria Bioqimica"
+        $alumnosporcarrera->semestre = "9"
+        $alumnosporcarrera->creditos = "249"
+        $alumnosporcarrera->opciones = ""
+        $estado->save();
+        
+        $alumnosporcarrera2 = new Alumnosporcarrera();
+        $alumnosporcarrera2->matricula = "5850"
+        $alumnosporcarrera2->nombre = "Maria Canto Paat"
+        $alumnosporcarrera2->carrera = "Ingeniria en Sistemas"
+        $alumnosporcarrera2->semestre = "9"
+        $alumnosporcarrera2->creditos = "249"
+        $alumnosporcarrera2->opciones = ""
+        $estado->save();
+
+        $alumnosporcarrera3 = new Alumnosporcarrera();
+        $alumnosporcarrera3->matricula = "6234"
+        $alumnosporcarrera3->nombre = "Ronaldo Can Santiago"
+        $alumnosporcarrera3->carrera = "Ingeniria en Materiales"
+        $alumnosporcarrera3->semestre = "9"
+        $alumnosporcarrera3->creditos = "249"
+        $alumnosporcarrera3->opciones = ""
+        $estado->save();
+
+        $alumnosporcarrera4 = new Alumnosporcarrera();
+        $alumnosporcarrera4->matricula = "6560"
+        $alumnosporcarrera4->nombre = "Karla Haas Haas"
+        $alumnosporcarrera4->carrera = "Ingeniria Bioqimica"
+        $alumnosporcarrera4->semestre = "9"
+        $alumnosporcarrera4->creditos = "249"
+        $alumnosporcarrera4->opciones = ""
+        $estado->save();
+
+        $alumnosporcarrera5 = new Alumnosporcarrera();
+        $alumnosporcarrera5->matricula = "5134"
+        $alumnosporcarrera5->nombre = "Milton Hernandez Moo"
+        $alumnosporcarrera5->carrera = "Administracion de Empresas"
+        $alumnosporcarrera5->semestre = "9"
+        $alumnosporcarrera5->creditos = "249"
+        $alumnosporcarrera5->opciones = ""
+        $estado->save();
+
+        $alumnosporcarrera6 = new Alumnosporcarrera();
+        $alumnosporcarrera6->matricula = "6665"
+        $alumnosporcarrera6->nombre = "Darcy Zi Canche"
+        $alumnosporcarrera6->carrera = "Ingeniria Industrial"
+        $alumnosporcarrera6->semestre = "9"
+        $alumnosporcarrera6->creditos = "249"
+        $alumnosporcarrera6->opciones = ""
+        $estado->save();
+
+        $alumnosporcarrera7 = new Alumnosporcarrera();
+        $alumnosporcarrera7->matricula = "5260"
+        $alumnosporcarrera7->nombre = "Antonio Garcia Pech"
+        $alumnosporcarrera7->carrera = "Ingeniria Mecatronica"
+        $alumnosporcarrera7->semestre = "9"
+        $alumnosporcarrera7->creditos = "249"
+        $alumnosporcarrera7->opciones = ""
+        $estado->save();
+
+        $alumnosporcarrera8 = new Alumnosporcarrera();
+        $alumnosporcarrera8->matricula = "6934"
+        $alumnosporcarrera8->nombre = "Guadalupe Lomas Tax"
+        $alumnosporcarrera8->carrera = "Ingeniria en Sistemas"
+        $alumnosporcarrera8->semestre = "9"
+        $alumnosporcarrera8->creditos = "249"
+        $alumnosporcarrera8->opciones = ""
+        $estado->save();
+    
+
         $estado = new Estado();
         $estado->nombre = "Aguascalientes";
         $estado->save();
