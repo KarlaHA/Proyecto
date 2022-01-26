@@ -17,11 +17,13 @@ use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\DocumentodosController;
 use App\Http\Controllers\AsesorunoController;
 use App\Http\Controllers\AsesordosController;
+use App\Http\Controllers\AsesorexternoController;
 use App\Http\Controllers\SolicitudunoController;
 use App\Http\Controllers\SolicituddosController;
 use App\Http\Controllers\AsigcalifController;
 use App\Http\Controllers\AsigcalifdosController;
 use App\Http\Controllers\AsignarAlumnoController;
+use App\Http\Controllers\CalificacionesController;
 use App\Http\Controllers\MostraralumController;
 
 /*
@@ -102,3 +104,17 @@ Route::get('calificaciones', [AsigcalifController::class, 'buscarcalif']);
 Route::get('asignarcalificaciones', [AsigcalifdosController::class, 'asignarcalif']);
 
 Route::get('mostraralumnos', [MostraralumController::class, 'presentaralumnos']);
+
+Route::get('asesorexterno', [AsesorexternoController::class, 'asesores']);
+
+Route::get('nuevoasesor', [AsesorexternoController::class, 'nuevo']);
+
+Route::post('asignarasesor', [AsesorexternoController::class, 'asignacion']);
+
+Route::post('asignarasesor/asignar', [AsesorexternoController::class, 'asignar']);
+
+Route::POST('nuevoasesor/guardar', [AsesorexternoController::class, 'guardar']);
+
+Route::get('calificaciones', [CalificacionesController::class, 'index']);
+
+Route::post('calificaciones/asignar', [CalificacionesController::class, 'asignar']);

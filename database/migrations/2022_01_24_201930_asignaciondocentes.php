@@ -17,8 +17,11 @@ class Asignaciondocentes extends Migration
         Schema::create('asigdocentes', function (Blueprint $table) {
             $table->id();
             $table->string('estatus');
+            $table->string('tipo');
             $table->unsignedBigInteger('docente_id')->nullable();
             $table->foreign('docente_id')->references('id')->on('registrodocentes');
+            $table->unsignedBigInteger('asesorexterno_id')->nullable();
+            $table->foreign('asesorexterno_id')->references('id')->on('asesorexternos');
             $table->unsignedBigInteger('alumno_id')->nullable();
             $table->foreign('alumno_id')->references('id')->on('alumnosporcarreras');
             
