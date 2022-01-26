@@ -2,10 +2,12 @@
 
 namespace Database\Seeders;
 
+use Alumnosporcarrera as GlobalAlumnosporcarrera;
 use App\Models\Registroempresa;
 use App\Models\Alumnosporcarrera;
 use App\Models\Estado;
 use App\Models\Municipio;
+use App\Models\Assignment;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -930,6 +932,103 @@ class DatabaseSeeder extends Seeder
         $lug19->nombre ="Zacatecas";
         $lug19->estado_id = "32";
         $lug19->save();
+
+        $alumno = new Alumnosporcarrera();
+        $alumno->matricula = "6221";
+        $alumno->nombre = "Leandro Can";
+        $alumno->carrera = "Ingenieria Informatica";
+        $alumno->semestre = "9no";
+        $alumno->creditos = "255";
+        $alumno->opciones = "";
+        $alumno->save();
+
+        $alumno2 = new Alumnosporcarrera();
+        $alumno2->matricula = "6222";
+        $alumno2->nombre = "Irina Vargas";
+        $alumno2->carrera = "Ingenieria Bioquimica";
+        $alumno2->semestre = "9no";
+        $alumno2->creditos = "255";
+        $alumno2->opciones = "";
+        $alumno2->save();
+
+        $alumno3 = new Alumnosporcarrera();
+        $alumno3->matricula = "6223";
+        $alumno3->nombre = "Julio Segovia";
+        $alumno3->carrera = "Ingenieria en sistemas computacionales";
+        $alumno3->semestre = "9no";
+        $alumno3->creditos = "255";
+        $alumno3->opciones = "";
+        $alumno3->save();
+
+        $alumno4 = new Alumnosporcarrera();
+        $alumno4->matricula = "6224";
+        $alumno4->nombre = "Karla Haas";
+        $alumno4->carrera = "Ingenieria Mecatronica";
+        $alumno4->semestre = "9no";
+        $alumno4->creditos = "255";
+        $alumno4->opciones = "";
+        $alumno4->save();
+
+        $alumno5 = new Alumnosporcarrera();
+        $alumno5->matricula = "6225";
+        $alumno5->nombre = "Rommel Saenz";
+        $alumno5->carrera = "Ingenieria Industrial";
+        $alumno5->semestre = "9no";
+        $alumno5->creditos = "255";
+        $alumno5->opciones = "";
+        $alumno5->save();
+
+        $alumno6 = new Alumnosporcarrera();
+        $alumno6->matricula = "6226";
+        $alumno6->nombre = "Rosa Caamal";
+        $alumno6->carrera = "Ingenieria Industrial";
+        $alumno6->semestre = "9no";
+        $alumno6->creditos = "255";
+        $alumno6->opciones = "";
+        $alumno6->save();
+
+        $alumno7 = new Alumnosporcarrera();
+        $alumno7->matricula = "6227";
+        $alumno7->nombre = "Rosa Caamal";
+        $alumno7->carrera = "Ingenieria Industrial";
+        $alumno7->semestre = "9no";
+        $alumno7->creditos = "255";
+        $alumno7->opciones = "";
+        $alumno7->save();
+
+        $alumno8 = new Alumnosporcarrera();
+        $alumno8->matricula = "6228";
+        $alumno8->nombre = "Ricardo Cetz";
+        $alumno8->carrera = "Ingenieria Informatica";
+        $alumno8->semestre = "9no";
+        $alumno8->creditos = "255";
+        $alumno8->opciones = "";
+        $alumno8->save();
+
+        $alumno9 = new Alumnosporcarrera();
+        $alumno9->matricula = "6229";
+        $alumno9->nombre = "Lissie Chuc";
+        $alumno9->carrera = "Ingenieria en Industrias Alimentarias";
+        $alumno9->semestre = "9no";
+        $alumno9->creditos = "255";
+        $alumno9->opciones = "";
+        $alumno9->save();
+
+        $alumno10 = new Alumnosporcarrera();
+        $alumno10->matricula = "6230";
+        $alumno10->nombre = "Oscar Xavier Aragon";
+        $alumno10->carrera = "Licenciatura en Administracion";
+        $alumno10->semestre = "9no";
+        $alumno10->creditos = "255";
+        $alumno10->opciones = "";
+        $alumno10->save();
+
+
+
+
+
+
+
     }
         
     
