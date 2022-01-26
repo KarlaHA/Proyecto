@@ -24,6 +24,7 @@ class AsesorunoController extends Controller
         ->where('asigdocentes.estatus', 'LIKE', 'No asignado')->where('carrera', 'LIKE', $request->carrera)->get();
         /*$lista = Alumnosporcarrera::where('carrera', $request->carrera)->get();*/
         return view('asesoresinternos.asignardocente', compact('lista', 'request'));
+       
         
          
     }
