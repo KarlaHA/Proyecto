@@ -43,9 +43,7 @@
                 <a href="busquedaalumnos">
                     <div class="title"><span>Asignar alumnos</span></div>
                 </a>
-                <a href="#">
-                    <div class="title"><span>Documentos</span></div>
-                </a>
+               
                 <a href="asesoruno">
                     <div class="title"><span>Asesores Internos</span></div>
                 </a>
